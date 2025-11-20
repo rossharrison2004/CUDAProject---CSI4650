@@ -1,3 +1,4 @@
+## harris_v2
 __global__ void harrisKernel_v2(const float *d_img, float *d_dst,
                                 int width, int height, float k) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
@@ -42,3 +43,4 @@ void harrisGPU_v2(const cv::Mat &img, cv::Mat &dst, float k /*= 0.04f*/) {
     CHECK_CUDA(cudaFree(d_img));
     CHECK_CUDA(cudaFree(d_dst));
 }
+
