@@ -1,6 +1,5 @@
 #include "cpu_baseline.cpp"
-#include "harris_v1.cuh"
-
+#include <iostream>
 
 int main() {
     cv::Mat img = cv::imread("input.png", cv::IMREAD_GRAYSCALE);
