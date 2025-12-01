@@ -1,0 +1,13 @@
+Allocating 16777216 floats...
+CPU reference = 16777216.000000
+
+Harris Kernel 3 (Sequential): 1.693 ms, result = 16777216.000000
+Harris Kernel 5 (Unroll Last Warp): 0.921 ms, result = 16777216.000000
+Luitjens Block-Atomic: 0.593 ms, result = 16777216.000000
+
+=========================
+Correctness Check:
+=========================
+Harris 3:   OK
+Harris 5:   OK
+Luitjens:   OK

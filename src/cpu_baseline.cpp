@@ -1,8 +1,6 @@
 //code here
-#include <opencv2/opencv.hpp>
 #include <vector>
 #include <cmath>
-#include "utils.h"
 
 void harrisCPU(const cv::Mat &img, cv::Mat &dst, float k = 0.04, int window_size = 3) {
     cv::Mat Ix, Iy;
